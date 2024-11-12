@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Página de Inicio de Sesión</title>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="sign-up">
+        <form>
+          <h1>Crear Cuenta</h1>
+          <span>o usa tu correo para registrarte</span>
+          <input type="text" placeholder="Nombre" />
+          <input type="text" placeholder="Correo electrónico" />
+          <input type="password" placeholder="Contraseña" />
+          <button>Registrarse</button>
+        </form>
+      </div>
+      <div class="sign-in">
+        <form>
+          <h1>Iniciar Sesión</h1>
+          <span>o usa tu correo y contraseña</span>
+          <input type="text" placeholder="Correo electrónico" />
+          <input type="password" placeholder="Contraseña" />
+          <a href="#">¿Olvidaste tu contraseña?</a>
+          <button>Iniciar Sesión</button>
+        </form>
+      </div>
+      <div class="toogle-container">
+        <div class="toogle">
+          <div class="toogle-panel toogle-left">
+            <h1>¡Bienvenido Usuario!</h1>
+            <p>Si ya tienes una cuenta</p>
+            <button class="hidden" id="login">Iniciar Sesión</button>
+          </div>
+          <div class="toogle-panel toogle-right">
+            <h1>¡Hola, Usuario!</h1>
+            <p>Si no tienes una cuenta</p>
+            <button class="hidden" id="register">Registrarse</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
